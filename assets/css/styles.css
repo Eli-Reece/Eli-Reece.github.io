@@ -15,10 +15,7 @@ body {
 .opening {
   text-align: center;
   padding-top: 50px;
-  /*margin-bottom: 30px;*/
-}
-
-.h1, h1 {
+  /*margin-bottom: initial;*/
 }
 
 img {
@@ -26,6 +23,6 @@ img {
 }
 
 .row {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 

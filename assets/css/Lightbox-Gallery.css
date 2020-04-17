@@ -40,3 +40,33 @@
   padding-bottom: 30px;
 }
 
+.toolkit {
+  margin-top: 150px;
+}
+
+.d-flex.float-left.d-lg-flex.align-content-center {
+  /*margin-right: 200px;*/
+}
+
+.text-center.d-xl-flex.flex-shrink-1 {
+  /*margin-right: 100px;*/
+}
+
+.fa.fa-chevron-right {
+}
+
+.display-3.d-xl-flex.justify-content-xl-center {
+  margin-top: 30px;
+}
+
+.h1, h1 {
+}
+
+.about {
+  margin-top: 80px;
+}
+
+.icon.ion-ios-arrow-down.d-xl-flex.justify-content-xl-center.about1 {
+  padding-top: 40px;
+}
+
