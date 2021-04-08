@@ -77,8 +77,23 @@
 									<h3>Automatic Dog Water Bowl</h3>
 									<div class="features">
 										<article>
-											<h5>Water Level Sensor w/ Servo v.1</h5>
-											<pre><code>
+											<h4>Intro</h4>
+											<p>I love my dog dearly but getting up to fill her water bowl has become a hassle. Her food bowl is simple, fill at 7 am and then fill at 7 pm. Easy. Her water bowl, on the contrary, needs to be at a reasonable level at all times. Dogs need to have water always accessible. The problem is, her water bowl is not at a visible place and it’s about a good 20 paces from my room. I tried using gravity bowls but they’re flimsy and my dog gets too excited with the bubbles and tries to knock the water jug over. So, as of now, I’ve been checking her water bowl every 30 mins but it’s getting tiresome and I don’t like to leave my room. Solution: have an Arduino fill her water bowl</p>
+											<h4>Measuring the water level</h4>
+											<p>The Arduino needs to know when or when not to fill the bowl.</p>
+											<div class="row">
+												<div class="col-6 col-12-xsmall">
+													<h5>My initial ideas</h5>
+													<ul>
+														<li>weight (scale)</li>
+														<li>water level sensor</li>
+														<li>ultrasonic distance sensor</li>
+													</ul>
+														</div>
+												</div>
+
+														<h5>Water Level Sensor w/ Servo v.1</h5>
+														<pre><code>
 /*LCD:
 * LCD RS pin to digital pin 7
 * LCD Enable pin to digital pin 8
@@ -159,10 +174,10 @@ void loop() {
 	digitalWrite(Reset,LOW);
 }
 </code></pre>
-											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
+														<div class="inner">
+															<h4>Possibly broke spacetime</h4>
+															<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+														</div>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
