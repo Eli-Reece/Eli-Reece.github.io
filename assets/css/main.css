@@ -2708,7 +2708,7 @@ header.major h2 {
 	text-align: center;
 	top: 0;
 	width: 23em;
-	left: 0;
+	right: 0;
 }
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2819,7 +2819,7 @@ header.major h2 {
 
 	#wrapper {
 		background: #fff;
-		padding-left: 12em;
+		padding-right: 23em;
 	}
 
 /* Main */
@@ -2897,7 +2897,7 @@ header.major h2 {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 23em;
+				padding-right: 21em;
 			}
 
 		/* Main */
