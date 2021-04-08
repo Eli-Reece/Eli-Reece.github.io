@@ -2789,7 +2789,7 @@ header.major h2 {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px #fff;
 					display: block;
 					padding: 0;
 				}
