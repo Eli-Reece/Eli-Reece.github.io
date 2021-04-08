@@ -2719,9 +2719,9 @@ header.major h2 {
 				color: #ffffff;
 			}
 
-		#header header p {
-			color: #b7eadc;
-		}
+	#header header p {
+		color: #fff;
+	}
 
 		#header a {
 			color: #fff;
@@ -2772,7 +2772,7 @@ header.major h2 {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #fff;
 				}
 
 		#header > nav {
