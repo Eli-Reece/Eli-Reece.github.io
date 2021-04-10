@@ -1704,9 +1704,10 @@ pre {
 /* Container */
 
 .container {
+    /*margin: 250px auto;*/
     margin: 0 auto;
     max-width: calc(100% - 4.5em);
-    width: 45em;
+    width: 50em;
 }
 
     .container.xsmall {
@@ -2809,11 +2810,13 @@ input[type="button"],
                     border-top: 0;
                 }
 
+
+
 /* Wrapper */
 
 #wrapper {
     background: #fff;
-    padding-right: 23em;
+    padding-right: 18em;
 }
 
 /* Main */
@@ -3002,6 +3005,8 @@ input[type="button"],
         -ms-transition: -ms-transform 0.5s ease;
         transition: transform 0.5s ease;
         padding: 44px 0 1px 0;
+        width: 400px;
+
     }
 
     /* Header Panel */

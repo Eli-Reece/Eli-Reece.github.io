@@ -18,13 +18,14 @@
 				<header>
 					<span class="image avatar"><img src="images/File_000.jpeg" alt="" /></span>
 					<h1 id="logo"><a href="#">Elisha Reece</a></h1>
-					<p>SDSU<br />Computer Engineering 23'</p>
+					<p>SDSU <br />Computer Engineering 23'</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#Main" class="active">About Me</a></li>
+						<li class="active"><a href="#AboutMe">About Me</a></li>
 						<li><a href="#MySkills">My Skills</a></li>
 						<li><a href="#Projects">Projects</a></li> <!--change tag and below-->
+						<li><a href="#CV">CV</a></li>				<!--need to match section ids-->
 						<li><a href="#Contact">Contact</a></li>
 					</ul>
 				</nav>
@@ -42,18 +43,13 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- One -->
-							<section id="Main">
-								<!--
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								-->
+						<!-- About Me -->
+							<section id="AboutMe">
 								<div class="container">
 									<div class="major">
 										<h2>About Me</h2>
 									</div>
-									<p>My name is Elisha Reece, I'm a 20-year old student at San Diego State University studying Computer Engineering. I hope to specialize in embedded systems or security but I want to pick up as much as I can on the way. I play on the Ice Hockey team at State, play guitar, and work on projects with my Arduino in my spare time. Feel free to take a look around and/or contact me with any questions or inquiries.</p>
+									<p>My name is Elisha Reece, I'm a 20-year old student at San Diego State University studying Computer Engineering. I hope to specialize in embedded systems or security but I want to pick up as much as I can on the way. I play on the Ice Hockey team at State, play guitar, hang out with my dog, and work on projects with my Arduino in my spare time. Feel free to take a look around and/or contact me with any questions or inquiries.</p>
 								</div>
 							</section>
 						<!-- Two -->
@@ -78,9 +74,10 @@
 									<div class="features">
 										<article>
 											<h4>Intro</h4>
-											<p>I love my dog dearly but getting up to fill her water bowl has become a hassle. Her food bowl is simple, fill at 7 am and then fill at 7 pm. Easy. Her water bowl, on the contrary, needs to be at a reasonable level at all times. Dogs need to have water always accessible. The problem is, her water bowl is not at a visible place and it’s about a good 20 paces from my room. I tried using gravity bowls but they’re flimsy and my dog gets too excited with the bubbles and tries to knock the water jug over. So, as of now, I’ve been checking her water bowl every 30 mins but it’s getting tiresome and I don’t like to leave my room. Solution: have an Arduino fill her water bowl</p>
+											<blockquote>I love my dog dearly but getting up to fill her water bowl has become a hassle. Her food bowl is simple, fill at 7 am and then fill at 7 pm. Easy. Her water bowl, on the contrary, needs to be at a reasonable level at all times. Dogs need to have water always accessible. The problem is, her water bowl is not at a visible place and it’s about a good 20 paces from my room. I tried using gravity bowls but they’re flimsy and my dog gets too excited with the bubbles and tries to knock the water jug over. So, as of now, I’ve been checking her water bowl every 30 mins but it’s getting tiresome and I don’t like to leave my room. Solution: have an Arduino fill her water bowl</blockquote>
 											<h4>Measuring the water level</h4>
-											<p>The Arduino needs to know when or when not to fill the bowl.</p>
+											<blockquote>The Arduino needs to know when or when not to fill the bowl.</blockquote>
+											
 											<div class="row">
 												<div class="col-6 col-12-xsmall">
 													<h5>My initial ideas</h5>
@@ -89,11 +86,36 @@
 														<li>water level sensor</li>
 														<li>ultrasonic distance sensor</li>
 													</ul>
-														</div>
 												</div>
-
-														<h5>Water Level Sensor w/ Servo v.1</h5>
-														<pre><code>
+											</div>
+											<h5>Weight</h5>
+											<blockquote>This one seemed like it would be most accurate and easy to set definitions for a bowl that needs to be filled but is a bit too complicated and I had no means of weighing.</blockquote>
+											<h5>Water Level Sensor</h5>
+											<blockquote>I had one lying around from one of my kits but while testing, it gave a lot of unusable results. For example, if the water level was at 5cm then went down to 3cm, it would still read 5cm due to residual moisture (i assume), it just wasn’t very accurate.</blockquote>
+											<h5>Ultrasonic Distance Sensor</h5>
+											<blockquote>This worked well, measured the distance from the sensor to the water accurately, and although the sensor would sometimes bug out and return distances greater than 1000cm, I easily got around this with 2 lines of code</blockquote>
+											<h4>Prototyping</h4>
+											<div class="row">
+												<div class="col-6 col-12-xsmall">
+													<h4>Parts</h4>
+													<ul>
+														<li>Mega 2560</li>
+														<li>Breadboard</li>
+														<li>LCD screen</li>
+														<li>Thermistor</li>
+														<li>HC-SR04</li>
+														<li>10kOhm Resistor</li>
+														<li>Potentiometer</li>
+													</ul>
+												</div>
+											</div>
+											<blockquote>Using circuito.io, I was able to create a rough diagram of the setup</blockquote>
+											<div class="image"> <img src="images/waterprototype.png" /> </div>
+											<blockquote>To test, I jerryrigged the SR04 to a cup with some scotch tape</blockquote>
+											<div class="image"> <img src="images/protowater.jpeg" /> </div>
+											<p><br /></p>
+											<h4>Water Level Sensor w/ Servo v.1</h4>
+											<pre><code>
 /*LCD:
 * LCD RS pin to digital pin 7
 * LCD Enable pin to digital pin 8
@@ -119,33 +141,37 @@
 * Orange -> PWM 4+
 *
 */
-#include <LiquidCrystal.h>
-#include "SR04.h"
-include <Servo.h>
-Servo water;
 
+#include "LiquidCrystal.h""
+#include "SR04.h"
+#include "Servo.h"
+Servo water;
 #define TRIG_PIN 2
 #define ECHO_PIN 3
 SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
 //                BS  E  D4 D5  D6 D7
 LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
+
 int level;
 int tempPin = 0;
 int Reset = 4;
+
 void setup() {
+
 	digitalWrite(Reset,HIGH);
     pinMode(Reset, OUTPUT);
     water.attach(4);
     lcd.begin(16, 2);
 }
+
 void loop() {
+
 	//temperature
 	int tempReading = analogRead(tempPin);
 	double tempK = log(10000.0 * ((1024.0 / tempReading - 1)));
-	tempK = 1 / (0.001129148 + (0.000234125 + (0.0000000876741 * tempK * tempK )) * tempK );       //  Temp Kelvin
+	tempK = 1 / (0.001129148 + (0.000234125 + (0.0000000876741 * tempK * tempK )) * tempK ); //  Temp Kelvin
 	float tempC = tempK - 273.15;            // Convert Kelvin to Celcius
-	 float tempF = (tempC * 9.0)/ 5.0 + 32.0; // Convert Celcius to Fahrenheit
-	//float tempC = (tempVolts - 0.5) * 10.0;
+	float tempF = (tempC * 9.0)/ 5.0 + 32.0; // Convert Celcius to Fahrenheit
 
 	//SR04 level
 	level = sr04.Distance();
@@ -172,19 +198,18 @@ void loop() {
 	//reset arduino if sensor acts up
 	if (level > 10 || level < 0) {
 	digitalWrite(Reset,LOW);
-}
+	}
+
 </code></pre>
-														<div class="inner">
-															<h4>Possibly broke spacetime</h4>
-															<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-														</div>
-										</article>
+										<p>Testing worked great and the Servo kicked in when it should. I varied the water level by using a straw and it isn't exact but it showed that my code works.</p>	
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
+											<div class="features">
+												<h4>Assembly Hockey Scoreboard</h4>
+												<blockquote>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</blockquote>
+											
+													<img src="images/hockeyscoreboardsnapshot.png" style="width: 1000px; height: auto;" />
+												
+												</div>
 										</article>
 									</div>
 								</div>
