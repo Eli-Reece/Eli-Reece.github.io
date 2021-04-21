@@ -77,7 +77,7 @@
 											<blockquote>I love my dog dearly but getting up to fill her water bowl has become a hassle. Her food bowl is simple, fill at 7 am and then fill at 7 pm. Easy. Her water bowl, on the contrary, needs to be at a reasonable level at all times. Dogs need to have water always accessible. The problem is, her water bowl is not at a visible place and it’s about a good 20 paces from my room. I tried using gravity bowls but they’re flimsy and my dog gets too excited with the bubbles and tries to knock the water jug over. So, as of now, I’ve been checking her water bowl every 30 mins but it’s getting tiresome and I don’t like to leave my room. Solution: have an Arduino fill her water bowl</blockquote>
 											<h4>Measuring the water level</h4>
 											<blockquote>The Arduino needs to know when or when not to fill the bowl.</blockquote>
-											
+
 											<div class="row">
 												<div class="col-6 col-12-xsmall">
 													<h5>My initial ideas</h5>
@@ -104,13 +104,13 @@
 														<li>LCD screen</li>
 														<li>Thermistor</li>
 														<li>HC-SR04</li>
-														<li>10kOhm Resistor</li>
+														<li>10k Ohm Resistor</li>
 														<li>Potentiometer</li>
 													</ul>
 												</div>
 											</div>
 											<blockquote>Using circuito.io, I was able to create a rough diagram of the setup</blockquote>
-											<div class="image"> <img src="images/waterprototype.png" /> </div>
+											<div class="image"> <img src="images/waterprototype.jpeg" /> </div>
 											<blockquote>To test, I jerryrigged the SR04 to a cup with some scotch tape</blockquote>
 											<div class="image"> <img src="images/protowater.jpeg" /> </div>
 											<p><br /></p>
@@ -201,18 +201,41 @@ void loop() {
 	}
 
 </code></pre>
-										<p>Testing worked great and the Servo kicked in when it should. I varied the water level by using a straw and it isn't exact but it showed that my code works.</p>	
-										<article>
-											<div class="features">
-												<h4>Assembly Hockey Scoreboard</h4>
-												<blockquote>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</blockquote>
-											
-													<img src="images/hockeyscoreboardsnapshot.png" style="width: 1000px; height: auto;" />
-												
+											<p>Testing worked great and the Servo kicked in when it should. I varied the water level by using a straw and it isn't exact but it showed that my code works.</p>
+											<h4>Prototyping pt. 2</h4>
+											<div class="row">
+												<div class="col-6 col-12-xsmall">
+													<h4>Parts</h4>
+													<ul>
+														<li>Mega 2560</li>
+														<li>Breadboard</li>
+														<li>LCD screen</li>
+														<li>Potentiometer</li>
+														<li>Thermistor</li>
+														<li>HC-SR04</li>
+														<li>10k Ohm Resistor</li>
+														<li>220 Ohm Resistor</li>
+														<li>12V Brass Solenoid Valve (3/4")</li>
+														<li>12V DC 2A Wall Power Supply</li>
+														<li>60V 30A N-Channel Power Mosfet</li>
+														<li>50V 1A Rectifier Diode</li>
+														<li>Jumper Cables</li>
+													</ul>
 												</div>
-										</article>
-									</div>
-								</div>
+											</div>
+											<blockquote>Design using circuito.io</blockquote>
+											<div class="image"> <img src="images/waterprototype.jpeg" /> </div>
+											<article>
+												<div class="features">
+													<h4>Assembly Hockey Scoreboard</h4>
+													<blockquote>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</blockquote>
+
+													<img src="images/hockeyscoreboardsnapshot.png" style="width: 1000px; height: auto;" />
+
+												</div>
+											</article>
+</div>
+</div>
 							</section>
 
 						<!-- Four -->
