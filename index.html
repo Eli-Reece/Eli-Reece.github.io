@@ -14,108 +14,108 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/File_000.jpeg" alt="" /></span>
-					<h1 id="logo"><a href="#">Elisha Reece</a></h1>
-					<p>SDSU <br />Computer Engineering 23'</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li class="active"><a href="#AboutMe">About Me</a></li>
-						<li><a href="#MySkills">My Skills</a></li>
-						<li><a href="#Projects">Projects</a></li> <!--change tag and below-->
-						<li><a href="#CV">CV</a></li>				<!--need to match section ids-->
-						<li><a href="#Contact">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://github.com/Eli-Reece" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#Contact" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
+		<section id="header">
+			<header>
+				<span class="image avatar"><img src="images/File_000.jpeg" alt="" /></span>
+				<h1 id="logo"><a href="#">Elisha Reece</a></h1>
+				<p>SDSU <br />Computer Engineering 23'</p>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li class="active"><a href="#AboutMe">About Me</a></li>
+					<li><a href="#MySkills">My Skills</a></li>
+					<li><a href="#Projects">Projects</a></li> <!--change tag and below-->
+					<li><a href="#CV">CV</a></li>				<!--need to match section ids-->
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+			<footer>
+				<ul class="icons">
+					<li><a href="https://github.com/Eli-Reece" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#Contact" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</footer>
+		</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
+			<!-- Main -->
+			<div id="main">
 
-						<!-- About Me -->
-							<section id="AboutMe">
-								<div class="container">
-									<div class="major">
-										<h2>About Me</h2>
+				<!-- About Me -->
+				<section id="AboutMe">
+					<div class="container">
+						<div class="major">
+							<h2>About Me</h2>
+						</div>
+						<p>My name is Elisha Reece, I'm a 20-year old student at San Diego State University studying Computer Engineering. I hope to specialize in embedded systems or security but I want to pick up as much as I can on the way. I play on the Ice Hockey team at State, play guitar, hang out with my dog, and work on projects with my Arduino in my spare time. Feel free to take a look around and/or contact me with any questions or inquiries.</p>
+					</div>
+				</section>
+				<!-- Two -->
+				<section id="MySkills">
+					<div class="container">
+						<h2>My Skills</h2>
+						<ul class="feature-icons">
+							<li class="icon solid fa-code">Assembly(MIPS), C, C++, Python, JS/CSS/HTML, some Verilog</li>
+							<li class="icon solid fa-cubes">Github, Visual Studio, MS Suite, Eclipse, MARS, Multisim, some Xilinx ISE</li>
+							<li class="icon solid fa-book">Data Structure & OOP(260), Digital Systems(270), Computer Organization(271), Circuit Analysis(210) </li>
+							<li class="icon solid fa-bolt">Arduino Mega 2560, Uno R3, Raspberry Pi</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Three -->
+				<section id="Projects">
+					<div class="container">
+						<h2>Projects</h2>
+
+						<h3>Automatic Dog Water Bowl</h3>
+						<div class="features">
+							<article>
+								<h4>Intro</h4>
+								<blockquote>I love my dog dearly but getting up to fill her water bowl has become a hassle. Her food bowl is simple, fill at 7 am and then fill at 7 pm. Easy. Her water bowl, on the contrary, needs to be at a reasonable level at all times. Dogs need to have water always accessible. The problem is, her water bowl is not at a visible place and it’s about a good 20 paces from my room. I tried using gravity bowls but they’re flimsy and my dog gets too excited with the bubbles and tries to knock the water jug over. So, as of now, I’ve been checking her water bowl every 30 mins but it’s getting tiresome and I don’t like to leave my room. Solution: have an Arduino fill her water bowl</blockquote>
+								<h4>Measuring the water level</h4>
+								<blockquote>The Arduino needs to know when or when not to fill the bowl.</blockquote>
+
+								<div class="row">
+									<div class="col-6 col-12-xsmall">
+										<h5>My initial ideas</h5>
+										<ul>
+											<li>weight (scale)</li>
+											<li>water level sensor</li>
+											<li>ultrasonic distance sensor</li>
+										</ul>
 									</div>
-									<p>My name is Elisha Reece, I'm a 20-year old student at San Diego State University studying Computer Engineering. I hope to specialize in embedded systems or security but I want to pick up as much as I can on the way. I play on the Ice Hockey team at State, play guitar, hang out with my dog, and work on projects with my Arduino in my spare time. Feel free to take a look around and/or contact me with any questions or inquiries.</p>
 								</div>
-							</section>
-						<!-- Two -->
-							<section id="MySkills">
-								<div class="container">
-									<h2>My Skills</h2>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Assembly(MIPS), C, C++, Python, JS/CSS/HTML, some Verilog</li>
-										<li class="icon solid fa-cubes">Github, Visual Studio, MS Suite, Eclipse, MARS, Multisim, some Xilinx ISE</li>
-										<li class="icon solid fa-book">Data Structure & OOP(260), Digital Systems(270), Computer Organization(271), Circuit Analysis(210) </li>
-										<li class="icon solid fa-bolt">Arduino Mega 2560, Uno R3, Raspberry Pi</li>
-									</ul>
+								<h5>Weight</h5>
+								<blockquote>This one seemed like it would be most accurate and easy to set definitions for a bowl that needs to be filled but is a bit too complicated and I had no means of weighing.</blockquote>
+								<h5>Water Level Sensor</h5>
+								<blockquote>I had one lying around from one of my kits but while testing, it gave a lot of unusable results. For example, if the water level was at 5cm then went down to 3cm, it would still read 5cm due to residual moisture (i assume), it just wasn’t very accurate.</blockquote>
+								<h5>Ultrasonic Distance Sensor</h5>
+								<blockquote>This worked well, measured the distance from the sensor to the water accurately, and although the sensor would sometimes bug out and return distances greater than 1000cm, I easily got around this with 2 lines of code</blockquote>
+								<h4>Prototyping</h4>
+								<div class="row">
+									<div class="col-6 col-12-xsmall">
+										<h4>Parts</h4>
+										<ul>
+											<li>Mega 2560</li>
+											<li>Breadboard</li>
+											<li>LCD screen</li>
+											<li>Thermistor</li>
+											<li>HC-SR04</li>
+											<li>10k Ohm Resistor</li>
+											<li>Potentiometer</li>
+										</ul>
+									</div>
 								</div>
-							</section>
-
-						<!-- Three -->
-							<section id="Projects">
-								<div class="container">
-									<h2>Projects</h2>
-	
-									<h3>Automatic Dog Water Bowl</h3>
-									<div class="features">
-										<article>
-											<h4>Intro</h4>
-											<blockquote>I love my dog dearly but getting up to fill her water bowl has become a hassle. Her food bowl is simple, fill at 7 am and then fill at 7 pm. Easy. Her water bowl, on the contrary, needs to be at a reasonable level at all times. Dogs need to have water always accessible. The problem is, her water bowl is not at a visible place and it’s about a good 20 paces from my room. I tried using gravity bowls but they’re flimsy and my dog gets too excited with the bubbles and tries to knock the water jug over. So, as of now, I’ve been checking her water bowl every 30 mins but it’s getting tiresome and I don’t like to leave my room. Solution: have an Arduino fill her water bowl</blockquote>
-											<h4>Measuring the water level</h4>
-											<blockquote>The Arduino needs to know when or when not to fill the bowl.</blockquote>
-
-											<div class="row">
-												<div class="col-6 col-12-xsmall">
-													<h5>My initial ideas</h5>
-													<ul>
-														<li>weight (scale)</li>
-														<li>water level sensor</li>
-														<li>ultrasonic distance sensor</li>
-													</ul>
-												</div>
-											</div>
-											<h5>Weight</h5>
-											<blockquote>This one seemed like it would be most accurate and easy to set definitions for a bowl that needs to be filled but is a bit too complicated and I had no means of weighing.</blockquote>
-											<h5>Water Level Sensor</h5>
-											<blockquote>I had one lying around from one of my kits but while testing, it gave a lot of unusable results. For example, if the water level was at 5cm then went down to 3cm, it would still read 5cm due to residual moisture (i assume), it just wasn’t very accurate.</blockquote>
-											<h5>Ultrasonic Distance Sensor</h5>
-											<blockquote>This worked well, measured the distance from the sensor to the water accurately, and although the sensor would sometimes bug out and return distances greater than 1000cm, I easily got around this with 2 lines of code</blockquote>
-											<h4>Prototyping</h4>
-											<div class="row">
-												<div class="col-6 col-12-xsmall">
-													<h4>Parts</h4>
-													<ul>
-														<li>Mega 2560</li>
-														<li>Breadboard</li>
-														<li>LCD screen</li>
-														<li>Thermistor</li>
-														<li>HC-SR04</li>
-														<li>10k Ohm Resistor</li>
-														<li>Potentiometer</li>
-													</ul>
-												</div>
-											</div>
-											<blockquote>Using circuito.io, I was able to create a rough diagram of the setup</blockquote>
-											<div class="image"> <img src="images/waterprototype.jpeg" /> </div>
-											<blockquote>To test, I jerryrigged the SR04 to a cup with some scotch tape</blockquote>
-											<div class="image"> <img src="images/protowater.jpeg" /> </div>
-											<p><br /></p>
-											<h4>Water Level Sensor w/ Servo v.1</h4>
-											<pre><code>
+								<blockquote>Using circuito.io, I was able to create a rough diagram of the setup</blockquote>
+								<div class="image"> <img src="images/waterprototype.jpeg" /> </div>
+								<blockquote>To test, I jerryrigged the SR04 to a cup with some scotch tape</blockquote>
+								<div class="image"> <img src="images/protowater.jpeg" /> </div>
+								<p><br /></p>
+								<h4>Water Level Sensor w/ Servo v.1</h4>
+								<pre><code>
 /*LCD:
 * LCD RS pin to digital pin 7
 * LCD Enable pin to digital pin 8
@@ -201,408 +201,487 @@ void loop() {
 	}
 
 </code></pre>
-											<p>Testing worked great and the Servo kicked in when it should. I varied the water level by using a straw and it isn't exact but it showed that my code works.</p>
-											<h4>Prototyping pt. 2</h4>
-											<div class="row">
-												<div class="col-6 col-12-xsmall">
-													<h4>Parts</h4>
-													<ul>
-														<li>Mega 2560</li>
-														<li>Breadboard</li>
-														<li>LCD screen</li>
-														<li>Potentiometer</li>
-														<li>Thermistor</li>
-														<li>HC-SR04</li>
-														<li>10k Ohm Resistor</li>
-														<li>220 Ohm Resistor</li>
-														<li>12V Brass Solenoid Valve (3/4")</li>
-														<li>12V DC 2A Wall Power Supply</li>
-														<li>60V 30A N-Channel Power Mosfet</li>
-														<li>50V 1A Rectifier Diode</li>
-														<li>Jumper Cables</li>
-													</ul>
-												</div>
-											</div>
-											<blockquote>Design using circuito.io</blockquote>
-											<div class="image"> <img src="images/waterprototype.jpeg" /> </div>
-											<article>
-												<div class="features">
-													<h4>Assembly Hockey Scoreboard</h4>
-													<blockquote>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</blockquote>
-
-													<img src="images/hockeyscoreboardsnapshot.png" style="width: 1000px; height: auto;" />
-
-												</div>
-											</article>
-</div>
-</div>
-							</section>
-
-						<!-- Four -->
-							<section id="Contact">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
+								<blockquote>Testing worked great and the Servo kicked in when it should. I varied the water level by using a straw and it isn't exact but it showed that my code works.</blockquote>
+								<h4>Prototyping pt. 2</h4>
+								<div class="row">
+									<div class="col-6 col-12-xsmall">
+										<h4>Parts</h4>
+										<ul>
+											<li>Mega 2560</li>
+											<li>Breadboard</li>
+											<li>LCD screen</li>
+											<li>Potentiometer</li>
+											<li>Thermistor</li>
+											<li>HC-SR04</li>
+											<li>10k Ohm Resistor</li>
+											<li>220 Ohm Resistor</li>
+											<li>12V Brass Solenoid Valve (3/4")</li>
+											<li>12V DC 2A Wall Power Supply</li>
+											<li>60V 30A N-Channel Power Mosfet</li>
+											<li>50V 1A Rectifier Diode</li>
+											<li>Jumper Cables</li>
+										</ul>
+									</div>
 								</div>
-							</section>
+								<blockquote>Design using circuito.io (Thermistor omitted)</blockquote>
+								<blockquote>Since the solenoid works at a different voltage than the Arduino, I needed a Mosfet in order to switch the current. The diode was so that the current could only flow in one direction which prevents my Arduino from getting killed.</blockquote>
+								<div class="image"> <img src="images/prototypept2.JPG" /> </div>
+								<blockquote>Actual Design attached to water jug</blockquote>
+								<div class="image"> <img src="images/rigged.JPG" /> </div>
+								<blockquote>Temporarily, I taped the HC-SRO4 to a chair and then recalibrated the distance. I also bought a hose bibb and drilled into a water jug so I didn't have the keep the hose on at all times. The solenoid worked great although the water flow was a bit slow. Still, I learned alot about solenoids and microcontrollers. </blockquote>
+								<h4>Final Code*</h4>
+								<pre><code>
+	/*LCD:
+	* LCD RS pin to digital pin 7
+	* LCD Enable pin to digital pin 8
+	* LCD D4 pin to digital pin 9
+	* LCD D5 pin to digital pin 10
+	* LCD D6 pin to digital pin 11
+	* LCD D7 pin to digital pin 12
+	* LCD R/W pin to ground
+	* LCD VSS pin to ground
+	* LCD VCC pin to 5V
+	* 10K resistor:
+	* ends to +5V and ground
+	*
+	*SR04:
+	* GND -> bb GND
+	* Vcc -> bb 5V
+	* Echo - > PWM 3
+	* Trig - > PWM 2
+	*
+	*Servo:
+	* Brown -> bb GND
+	* Red -> bb 5V
+	* Orange -> PWM 4+
+	*/
 
-						<!-- start of five -->
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
+	#include "LiquidCrystal.h""
+	#include "SR04.h"
+	#define TRIG_PIN 2
+	#define ECHO_PIN 3
+	SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
+	//                BS  E  D4 D5  D6 D7
+	LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
 
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									</section>
-								</div>	
-							</section>
-									<!--
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
+	int level;
+	int tempPin = 0;
+	int Reset = 4;
+	int solenoidPin = 6;
 
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
+	void setup() {
+	pinMode(solenoidPin, OUTPUT);
+	digitalWrite(solenoidPin, LOW);
+	lcd.begin(16, 2);
+	}
 
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
+	void loop() {
 
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
+	//temperature
+	int tempReading = analogRead(tempPin);
+	double tempK = log(10000.0 * ((1024.0 / tempReading - 1)));
+	tempK = 1 / (0.001129148 + (0.000234125 + (0.0000000876741 * tempK * tempK )) * tempK ); //  Temp Kelvin
+	float tempC = tempK - 273.15;            // Convert Kelvin to Celcius
+	float tempF = (tempC * 9.0)/ 5.0 + 32.0; // Convert Celcius to Fahrenheit
 
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
+	//SR04 level
+	level = sr04.Distance();
+	level = 28 - level;
 
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
+	// Display Temperature in C
+	lcd.setCursor(0, 0);
+	lcd.print("Temp           F");
+	lcd.setCursor(10, 0);
+	lcd.print(tempF);
+	lcd.setCursor(0, 1);
+	lcd.print("Water Lvl");
+	lcd.setCursor(11, 1);
+	lcd.print(level);
+	delay(1000);
 
-								</div>
-							</section>
+	//calculate water level and trigger servo if below "5cm"
+	if (level <= 4) {
+	digitalwrite(solenoidPin, HIGH);
+	}
+	if (level > 4) {
+	digitalwrite(solenoidPin, LOW);
+	}
+
+	}
+</code></pre>
+								<!--
+							<video width="320" height="240" autoplay>
+								<source src="images/IMG_4567.mp4" type="video/mp4">
+							</video>
 							-->
-						 <!--end-->
+							</article>
+						</div>
+						<article>
+							<div class="features">
+								<h4>Assembly Hockey Scoreboard</h4>
+								<blockquote>For my Computer Organization class, my final project was a hockey scoreboard written in MIPS. This was my first time working with any ISA. My project featured: polling, conditionals, 1-D arrays, loops, usage of the stack, jumps, and text based design. </blockquote>
 
+								<img src="images/hockeyscoreboardsnapshot.png" style="width: 1000px; height: auto;" />
+
+							</div>
+						</article>
 					</div>
+				</section>
+			</div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+
+
+			<!-- Four -->
+			<section id="Contact">
+				<div class="container">
+					<h3>Contact Me</h3>
+					<blockquote>Elisha Reece<br />elishareece@gmail.com<br />(619)723-4827</blockquote>
+
+				</div>
+			</section>
+
+			<!-- start of five
+			<section id="five">
+				<div class="container">
+					<h3>Elements</h3>
+
+					<section>
+						<h4>Text</h4>
+						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+						<hr />
+						<header>
+							<h4>Heading with a Subtitle</h4>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<header>
+							<h5>Heading with a Subtitle</h5>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<hr />
+						<h2>Heading Level 2</h2>
+						<h3>Heading Level 3</h3>
+						<h4>Heading Level 4</h4>
+						<h5>Heading Level 5</h5>
+						<h6>Heading Level 6</h6>
+						<hr />
+						<h5>Blockquote</h5>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					</section>
+				</div>
+			</section>
+					<!--
+					<section>
+						<h4>Lists</h4>
+						<div class="row">
+							<div class="col-6 col-12-xsmall">
+								<h5>Unordered</h5>
+								<ul>
+									<li>Dolor pulvinar etiam magna etiam.</li>
+									<li>Sagittis adipiscing lorem eleifend.</li>
+									<li>Felis enim feugiat dolore viverra.</li>
+								</ul>
+								<h5>Alternate</h5>
+								<ul class="alt">
+									<li>Dolor pulvinar etiam magna etiam.</li>
+									<li>Sagittis adipiscing lorem eleifend.</li>
+									<li>Felis enim feugiat dolore viverra.</li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<h5>Ordered</h5>
+								<ol>
+									<li>Dolor pulvinar etiam magna etiam.</li>
+									<li>Etiam vel felis at lorem sed viverra.</li>
+									<li>Felis enim feugiat dolore viverra.</li>
+									<li>Dolor pulvinar etiam magna etiam.</li>
+									<li>Etiam vel felis at lorem sed viverra.</li>
+									<li>Felis enim feugiat dolore viverra.</li>
+								</ol>
+								<h5>Icons</h5>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<h5>Actions</h5>
+						<ul class="actions">
+							<li><a href="#" class="button primary">Default</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button alt">Default</a></li>
+						</ul>
+						<ul class="actions small">
+							<li><a href="#" class="button primary small">Small</a></li>
+							<li><a href="#" class="button small">Small</a></li>
+							<li><a href="#" class="button alt small">Small</a></li>
+						</ul>
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-xsmall">
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+									<li><a href="#" class="button alt">Default</a></li>
+								</ul>
+							</div>
+							<div class="col-3 col-6 col-12-xsmall">
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+									<li><a href="#" class="button alt small">Small</a></li>
+								</ul>
+							</div>
+							<div class="col-3 col-6-medium col-12-xsmall">
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary fit">Default</a></li>
+									<li><a href="#" class="button fit">Default</a></li>
+									<li><a href="#" class="button alt fit">Default</a></li>
+								</ul>
+							</div>
+							<div class="col-3 col-6-medium col-12-xsmall">
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary small fit">Small</a></li>
+									<li><a href="#" class="button small fit">Small</a></li>
+									<li><a href="#" class="button alt small fit">Small</a></li>
+								</ul>
+							</div>
 						</div>
 					</section>
 
+					<section>
+						<h4>Table</h4>
+						<h5>Default</h5>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<h5>Alternate</h5>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h4>Buttons</h4>
+						<ul class="actions">
+							<li><a href="#" class="button primary">Primary</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button alt">Alternate</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button primary large">Large</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button alt small">Small</a></li>
+						</ul>
+						<ul class="actions fit">
+							<li><a href="#" class="button primary fit">Fit</a></li>
+							<li><a href="#" class="button fit">Fit</a></li>
+							<li><a href="#" class="button alt fit">Fit</a></li>
+						</ul>
+						<ul class="actions fit small">
+							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+							<li><a href="#" class="button fit small">Fit + Small</a></li>
+							<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+							<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
+						</ul>
+						<ul class="actions">
+							<li><span class="button primary disabled">Primary</span></li>
+							<li><span class="button disabled">Default</span></li>
+							<li><span class="button alt disabled">Alternate</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Form</h4>
+						<form method="post" action="#">
+							<div class="row gtr-uniform">
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<select name="demo-category" id="demo-category">
+										<option value="">- Category -</option>
+										<option value="1">Manufacturing</option>
+										<option value="1">Shipping</option>
+										<option value="1">Administration</option>
+										<option value="1">Human Resources</option>
+									</select>
+								</div>
+								<div class="col-4 col-12-medium">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low Priority</label>
+								</div>
+								<div class="col-4 col-12-medium">
+									<input type="radio" id="demo-priority-normal" name="demo-priority">
+									<label for="demo-priority-normal">Normal Priority</label>
+								</div>
+								<div class="col-4 col-12-medium">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High Priority</label>
+								</div>
+								<div class="col-6 col-12-medium">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Email me a copy of this message</label>
+								</div>
+								<div class="col-6 col-12-medium">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">I am a human and not a robot</label>
+								</div>
+								<div class="col-12">
+									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+										<li><input type="reset" value="Reset" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section>
+						<h4>Image</h4>
+						<h5>Fit</h5>
+						<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+						<div class="box alt">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+							</div>
+						</div>
+						<h5>Left &amp; Right</h5>
+						<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+					</section>
+
+				</div>
+			</section>
+			-->
+			<!--end-->
+
+		</div>
+
+		<!-- Footer
+		<section id="footer">
+			<div class="container">
+				<ul class="copyright">
+
+				</ul>
 			</div>
+		</section>
+		-->
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
